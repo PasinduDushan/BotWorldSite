@@ -29,7 +29,7 @@ app.post('/search', async (req, res) => {
 })
 
 /* app.get("/find", function(req, res) {
-    const Bot = Botinfo.find({ botname: 'groover' }, function(err, result) {
+    const Bot = Botinfo.find({ botname: 'somebot' }, function(err, result) {
       if (err) {
         console.log(err);
       } else {
