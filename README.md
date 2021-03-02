@@ -1,3 +1,3 @@
-# ejs-demo
+#Bot World
 
-This is demo code for a DigitalOcean tutorial here: https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
+This is a simple botlist that made for Botworld botlist. Also This is the first time that I created a botlist. Any suggestions, pull requests and issues are highly appreciated.
