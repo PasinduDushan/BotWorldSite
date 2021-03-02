@@ -43,7 +43,7 @@ app.get('/listedbots', function(req, res) {
 });
 
 app.listen(3000, async () => {
-    await mongoose.connect(`mongodb+srv://pasindu:${config.dbpassword}@discordbotbotlist.ixam2.mongodb.net/${config.dbusername}?retryWrites=true&w=majority`, {
+    await mongoose.connect(`${config.dburl}`, {
                 useNewUrlParser: true,
                 useUnifiedTopology: true
     }).then(console.log('Successfully connected to Database located on MongoDB'))
