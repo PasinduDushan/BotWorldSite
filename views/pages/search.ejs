@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+    <center><h1 class="title">
+        <u>Bot World</u>
+      </h1>
+      <p class="subtitle">
+        Choose the best bot for your server
+      </p></center>
+    <main>
+        <% bot.forEach(function(bot) { %>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src= <%= bot.image %>>
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4"><%= bot.name %></p>
+                  <p class="subtitle is-6"><%= bot.description %></p>
+                </div>
+             </div>
+             <button class="button is-primary is-focused"><a href= <%= bot.invite %>>Invite</a></button><br><br>
+            </div>
+          </div>
+          <center><button class="button is-primary is-rounded"><a href='/'>Go To Home</a></button></center>
+          <% }); %>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>
